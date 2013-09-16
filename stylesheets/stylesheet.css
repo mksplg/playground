@@ -298,7 +298,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 0px 10px 30px 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 #project_logo {
@@ -325,7 +325,6 @@ Full-Width Styles
   background: none;
   text-shadow: #111 0px 0px 10px;
   margin: -6px 0px 0px 0px;
-  float: left;
 }
 
 #downloads {
