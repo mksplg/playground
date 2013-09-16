@@ -301,6 +301,18 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+#project_logo {
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+  border: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  width: 400px;
+}
+
 #project_title {
   margin: 0;
   color: #fff;
@@ -315,6 +327,7 @@ Full-Width Styles
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+  margin: 0px;
 }
 
 #downloads {
