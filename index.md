@@ -2,7 +2,6 @@
 layout: index
 ---
 
-# Photohawk
 Photohawk is a pure Java implementation of the following image comparison algorithms:
 
 * Absolute error
