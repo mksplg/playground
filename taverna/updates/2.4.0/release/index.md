@@ -2,7 +2,7 @@
 layout: index
 ---
 
-## Taverna plugin RELEASE release
+## Taverna plugin release
 
 1. Open Taverna
 2. Add the plugin site
