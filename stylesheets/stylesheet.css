@@ -314,7 +314,8 @@ Full-Width Styles
 }
 
 #org_logo {
-  width: 300px;
+  float: right;
+  margin-top: 60px;
 }
 
 #tu_logo {
