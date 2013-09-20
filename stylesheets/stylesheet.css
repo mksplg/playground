@@ -301,22 +301,28 @@ Full-Width Styles
   padding: 0px 10px 0px 10px;
 }
 
-#project_logo {
+.logo {
   padding: 0px;
   margin: 0px;
   border: 0px;
   box-shadow: none;
-  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;  
+}
+
+#project_logo {
+  width: 300px;
+}
+
+#org_logo {
   width: 300px;
 }
 
 #tu_logo {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  width: 300px;
+  width: 60px;
+}
+
+#ifs_logo {
+  width: 60px;
 }
 
 #project_title {
