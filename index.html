@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--
 
@@ -40,7 +39,8 @@
     var pageUpdate = {
       loadContent : function(file) {
         Flatdoc.run({
-          fetcher: Flatdoc.github('openplanets/plato', file)
+          //fetcher: Flatdoc.github('openplanets/plato', file)
+          fetcher: Flatdoc.file('https://raw.githubusercontent.com/openplanets/plato/master/ABOUT.md')
         })
       }
     };
