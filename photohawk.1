@@ -1,0 +1,72 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "PHOTOHAWK" "1" "October 2014" "" ""
+.
+.SH "NAME"
+\fBphotohawk\fR \- image comparison
+.
+.SH "SYNOPSIS"
+\fBphotohawk\fR [\fB\-h\fR] [\fB\-\-version\fR] [\fB\-\-read\-left\fR {\fBdirect\fR,\fBdcraw\fR}] [\fB\-\-read\-right\fR {\fBdirect\fR,\fBdcraw\fR}] {\fBssim\fR,\fBae\fR,\fBequal\fR,\fBmae\fR,\fBmse\fR,\fBpae\fR} \fB<args>\fR
+.
+.SH "DESCRIPTION"
+\fBphotohawk\fR is a Java based impage comparison tool supporting:
+.
+.IP "\(bu" 4
+Structured similarity metric
+.
+.IP "\(bu" 4
+Absolute error
+.
+.IP "\(bu" 4
+Equal
+.
+.IP "\(bu" 4
+Mean absolute error
+.
+.IP "\(bu" 4
+Mean squared error
+.
+.IP "\(bu" 4
+Peak absolute error
+.
+.IP "" 0
+.
+.SH "OPTIONS"
+\fB\-h\fR, \fB\-\-help\fR show this help message and exit
+.
+.P
+\fB\-\-version\fR show version information and exit
+.
+.P
+\fB\-\-read\-left\fR {\fBdirect\fR,\fBdcraw\fR} read mode for images (default: direct) \fBdirect\fR reads the image using Java\'s ImageIO \fBdcraw\fR converts the image using dcraw before reading the image \fBdcraw\-fallback\fR checks if the image can be decoded by dcraw, otherwise fall back to direct mode \fBdirect\-mimetype\fR checks if the image mimetype is supported by the direct mode, otherwise fall back to dcraw
+.
+.P
+\fB\-\-read\-right\fR {\fBdirect\fR,\fBdcraw\fR} read mode for images (default: direct) \fBdirect\fR reads the image using Java\'s ImageIO \fBdcraw\fR converts the image using dcraw before reading the image \fBdcraw\-fallback\fR checks if the image can be decoded by dcraw, otherwise fall back to direct mode \fBdirect\-mimetype\fR checks if the image mimetype is supported by the direct mode, otherwise fall back to dcraw
+.
+.SS "Algorithms"
+\fBssim\fR Structured similarity metric
+.
+.P
+\fBae\fR Absolute error metric
+.
+.P
+\fBequal\fR Equal
+.
+.P
+\fBmae\fR Mean absolute error metric
+.
+.P
+\fBmse\fR Mean squared error
+.
+.P
+\fBpae\fR Peak absolute error metric
+.
+.SH "ENVIRONMENT"
+\fBDCRAW\fR With read mode \fBdcraw\fR, Photohawk will use this variable to locate the dcraw executable\. If not set, dcraw must be in the PATH\.
+.
+.SH "COPYRIGHT"
+Photohawk is licensed under the Apache License, Version 2\.0
+.
+.SH "SEE ALSO"
+dcraw(1), Structured similarity metric \fIhttps://ece\.uwaterloo\.ca/~z70wang/research/ssim/\fR
